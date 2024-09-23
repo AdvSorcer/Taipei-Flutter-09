@@ -12,7 +12,8 @@ class CityServiceViewController extends GetxController {
   void onInit() async {
     super.onInit();
     staticService.value = MosaicTileService.fromJson(
-      jsonDecode(await rootBundle.loadString(Assets.mockData.mosaicTileService)),
+      jsonDecode(
+          await rootBundle.loadString(Assets.mockData.mosaicTileService)),
     );
   }
 }
@@ -23,10 +24,10 @@ class CityServiceViewController extends GetxController {
 MosaicTileService get _defaultStaticService => const MosaicTileService(
       contentList: [
         MosaicTileServiceItem(
-          mainText: '市政服務',
+          mainText: '有球必In',
           subText: 'Service',
           url: '',
-          icon: 'assets/svg/Illustrations_gov.svg',
+          icon: 'assets/svg/ball.svg',
         ),
         MosaicTileServiceItem(
           mainText: '有話要說',
